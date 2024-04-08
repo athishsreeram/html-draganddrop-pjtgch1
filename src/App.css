@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.drop-container {
+  display: flex;
+}
+
+.drop-space {
+  border: 1px solid black;
+  min-height: 500px;
+  width: 80%;
+}
+
+.component-list {
+  margin-top: 20px;
+}
+
+.draggable-item {
+  margin: 10px;
+  cursor: move;
+}
+
+
+.dropped-item {
+  position: relative; /* Ensure the dropped item is a positioned parent for absolute positioning */
+}
+
+.top-right-icons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1; /* Set a higher z-index to ensure it's displayed above the content */
+}
+
+.top-right-icons > svg {
+  width: 16px; /* Adjust the width as needed */
+  height: 16px; /* Adjust the height as needed */
+  color: #888; /* Adjust the color as needed */
+  cursor: pointer;
+}
+
+/* Two Column Layout */
+.two-column-layout {
+  display: flex;
+}
+
+.two-column-layout .column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+/* Three Column Layout */
+.three-column-layout {
+  display: flex;
+}
+
+.three-column-layout .column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+
+
